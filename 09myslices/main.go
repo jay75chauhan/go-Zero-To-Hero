@@ -39,5 +39,21 @@ func main() {
     fmt.Println(score)
     fmt.Println(sort.IntsAreSorted(score))
 
+	//remove value from slice
+
+	var course = []string{"r","h","y","r"}
+
+    fmt.Println(course)
+
+        var i int = 2
+	course = append(course[:i], course[i+1:]...)
+
+
+
+
+	fmt.Println(course)
+
+
+	
 
 }

@@ -28,7 +28,7 @@ fmt.Println("rool the dice")
 		case 5: 
 		fmt.Println("you can move : 5")
 		case 6: 
-	              	fmt.Println("you can move : 6")
+	    fmt.Println("you can move : 6")
 		fallthrough
 	    default:
      	fmt.Println("what a man this is wrong")

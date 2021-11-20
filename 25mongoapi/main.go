@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+	"net/http"
 
-func main() {
-	fmt.Println("hii mongo db")
+	"github.com/jay75chauhan/mongoapi/router"
+)
+
+    func main() {
+	fmt.Println("hii mongo movie db")
+    r :=router.Router()
+	fmt.Println("Server is getting started...")
+    log.Fatal(http.ListenAndServe(":4000",r))   
+   fmt.Println("Server is getting started at 4000 now...")
+
+
 }
